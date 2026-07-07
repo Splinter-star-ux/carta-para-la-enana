@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Para la Enana</title>
+</head>
+<body>
+
+    <section id="portada" class="escena">
+        <div class="caja-portada">
+            <img src="assets/bts1.jpg" class="foto p1" alt="Foto 1">
+            <img src="assets/bts2.jpg" class="foto p2" alt="Foto 2">
+            <img src="assets/bts3.jpg" class="foto p3" alt="Foto 3">
+            <img src="assets/bts4.jpg" class="foto p4" alt="Foto 4">
+            <div class="hoja-portada">
+                <h1 class="titulo-cuento">"Había una vez..."</h1>
+                <button class="btn-portada" onclick="irAVideo()">Abrir el Álbum</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="intro-aot" class="escena oculto">
+        <video autoplay muted loop id="video-fondo" playsinline>
+            <source src="assets/fondo-aot.mp4" type="video/mp4">
+        </video>
+        <div class="contenido-intro">
+            <h1 class="texto-neon">¡FELIZ CUMPLEAÑOS, ÁTOMO DE PARTÍCULAS SUBATÓMICAS!</h1>
+            <button class="btn-legion" onclick="irAAlbum()">UNIRSE A LA LEGIÓN DE EXPLORACIÓN</button>
+        </div>
+    </section>
+
+    <section id="album" class="escena oculto">
+        <div class="libro-fisico">
+            <img src="assets/bts5.jpg" class="foto f1" alt="Foto 5">
+            <img src="assets/bts6.jpg" class="foto f2" alt="Foto 6">
+            <img src="assets/bts7.jpg" class="foto f3" alt="Foto 7">
+            <img src="assets/bts8.jpg" class="foto f4" alt="Foto 8">
+            <div class="hoja">
+                <p>Enana, te quería decir y desear un feliz cumpleaños dependiendo de qué día leas esto ajajaj, pero que la vida te sorprenda de la mejor manera posible.</p>
+                <p>Que en este año nuevo de vida, la salud te acompañe cada segundo, y que aquello que tú consideres especial nunca te falte.</p>
+                <p>Recuerda: un cumpleaños es un regalo de vida, un presente para ti, un momento para celebrar con las personas que te vieron crecer.</p>
+                <p>Con esto, ¡desearte un feliz cumpleaños, enana! :D</p>
+                <button class="btn-album" onclick="irASAO()">Siguiente</button>
+            </div>
+        </div>
+    </section>
+
+  <section id="fase-sao" class="escena oculto">
+        <div class="sao-grid"></div>
+        
+        <div class="sao-ui-window">
+            <div class="sao-alerta">« SYSTEM MESSAGE »</div>
+            
+            <img src="assets/espada-eugeo.png" class="espada-eugeo" alt="Espada">
+            
+            <p class="texto-sao">
+                No me gustaría alejarme de ti, no me gustaría dejar de ser tu amigo 'hermano', pero si esto debe pasar en algún momento, espero algún día volvernos a ver jajajaj. 
+                Deberías sentirte orgullosa de ti, has superado tantas cosas y mírate, sigues en pie. Sé que vas a llegar muy lejos y mi mayor deseo es verte sonreír con el alma cuando cumplas tus sueños. 
+                Así que hasta la próxima, y como diría Kirito: "Stay cool". Es una expresión muy popular del anime jajaja, bueno, para mí significa que no importa lo que pase debes mantener la mente fría, y en otros casos también significa despedirse, o sea, como un adiós pero más informal XD. 
+                Te lo digo porque esta frase tiene un significado muy profundo para mí, con eso te deseo suerte jajaja, así que...
+            </p>
+
+            <h2 class="frase-sao">... Stay cool, hermanita.</h2>
+            
+            <div class="sao-hp-container">
+                <span class="sao-hp-name">ENANA</span>
+                <div class="sao-hp-bar"><div class="sao-hp-fill"></div></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
